@@ -24,6 +24,7 @@ const exibirNome = nome => {
   // se tiver valor, será verdadeira e entrará no bloco
   if(estaNaLista){
     // estaNaLista verdadeira e imprime mensagem
+    document.getElementById("nome").classList.add("is-valid")
     document.getElementById("status").innerHTML = `${estaNaLista} estava no rolê`
     // return para encerrar a função
     return
@@ -38,6 +39,12 @@ document.getElementById("form-do-role").addEventListener("submit", function(even
   event.preventDefault()
   // limpamos o nosso status (caso tenha alguma mensagem lá)
   document.getElementById("status").innerHTML = ""
+  if(document.getElementById("nome").classList.contains("is-valid")){
+    document.getElementById("nome").classList.remove("is-valid")
+  }
+  if(document.getElementById("nome").classList.contains("is-invalid")){
+    document.getElementById("nome").classList.remove("is-invalid")
+  }
   // pegamos o valor do campo
   const valorCampo = document.getElementById("nome").value
   
@@ -56,5 +63,6 @@ document.getElementById("form-do-role").addEventListener("submit", function(even
     // executado, irá cair aqui no catch e vamos imprimir o erro
     console.log("ops!")
     document.getElementById("status").innerHTML = erro
+    document.getElementById("nome").classList.add("is-invalid")
   }
 })
