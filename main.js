@@ -1,5 +1,5 @@
 const nomesNoRole = [
-  "Adam", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank", "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"
+  "Amanda","Ana","Andrezza","Beatriz","Brennda","Carina","Gabriela","Giovanna","Ingrid Pitta","Ingrid Nascimento","Isabela","Jessica","Josiane","Julia","Kamila","Luciane","Marília","Mayara","Michelle","Nina","Rafaela","Raissa","Roberta","Talita","Vinólia","Vitória"
 ]
 
 const validacao = (nome) => {
